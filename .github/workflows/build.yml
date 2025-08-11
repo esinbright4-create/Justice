@@ -1,3 +1,4 @@
+
 name: Build Justice APK
 
 on:
@@ -27,7 +28,7 @@ jobs:
         buildozer -v android debug
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: JusticeAI-debug.apk
         path: bin/*.apk
